@@ -32,7 +32,7 @@ class _MyAppState extends State<MyApp> {
                 ],
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 35.0),
+                padding: const EdgeInsets.only(top: 25.0),
                 child: Align(
                     alignment: Alignment.topCenter,
                     child: Container(height: 72.0, child: BlurText())),

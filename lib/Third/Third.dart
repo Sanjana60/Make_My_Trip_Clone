@@ -13,7 +13,6 @@ class _ThirdState extends State<Third> {
     return Column(
       children: [
         Container(
-          height: 79,
           padding: EdgeInsets.all(15),
           width: MediaQuery.of(context).size.width - 60,
           color: Color(0xff202A44),
@@ -49,7 +48,6 @@ class _ThirdState extends State<Third> {
         Material(
           elevation: 5,
           child: Container(
-            height: 120,
             width: MediaQuery.of(context).size.width - 60,
             color: Colors.white,
             child: Padding(
@@ -59,16 +57,19 @@ class _ThirdState extends State<Third> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
-                        'Link your mobile number to check eligibility',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 12.0,
-                          letterSpacing: 0.2,
-                          fontFamily: 'Poppins',
-                          fontStyle: FontStyle.normal,
+                      Flexible(
+                        child: Text(
+                          'Link your mobile number to check eligibility',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 12.0,
+                            letterSpacing: 0.2,
+                            fontFamily: 'Poppins',
+                            fontStyle: FontStyle.normal,
+                          ),
                         ),
                       ),
+                      SizedBox(width: 10,),
                       ElevatedButton(
                         onPressed: () {},
                         child: Text(
