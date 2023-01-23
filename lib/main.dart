@@ -4,6 +4,7 @@ import 'BlurText/BlurText.dart';
 import 'First/First.dart';
 import 'Fourth/Fourth.dart';
 import 'Second/Second.dart';
+import 'SecondListBuilder/SecondListBuilder.dart';
 import 'Third/Third.dart';
 
 void main() {
@@ -70,6 +71,13 @@ class _MyAppState extends State<MyApp> {
                     Align(
                         alignment: Alignment.topCenter,
                         child: Container(child: Fourth())),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    CardSecond(),
+                    SizedBox(
+                      height: 200,
+                    ),
                   ],
                 ),
               ),

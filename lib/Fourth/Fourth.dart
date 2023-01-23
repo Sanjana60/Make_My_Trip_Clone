@@ -13,7 +13,7 @@ class _FourthState extends State<Fourth> {
     return Container(
       color: Colors.white,
       height: 80,
-      width: MediaQuery.of(context).size.width - 60,
+      width: MediaQuery.of(context).size.width - 20,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

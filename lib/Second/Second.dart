@@ -11,10 +11,14 @@ class _SecondState extends State<Second> {
   @override
   Widget build(BuildContext context) {
     return Material(
+      borderRadius: BorderRadius.circular(3),
       elevation: 5,
       child: Container(
-        width: MediaQuery.of(context).size.width - 60,
-        color: Colors.white,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(3),
+          color: Colors.white,
+        ),
+        width: MediaQuery.of(context).size.width - 20,
         child: Column(
           children: [
             SizedBox(

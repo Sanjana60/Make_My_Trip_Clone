@@ -14,7 +14,7 @@ class _ThirdState extends State<Third> {
       children: [
         Container(
           padding: EdgeInsets.all(15),
-          width: MediaQuery.of(context).size.width - 60,
+          width: MediaQuery.of(context).size.width - 20,
           color: Color(0xff202A44),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -46,10 +46,14 @@ class _ThirdState extends State<Third> {
           ),
         ),
         Material(
+          borderRadius: BorderRadius.circular(3),
           elevation: 5,
           child: Container(
-            width: MediaQuery.of(context).size.width - 60,
-            color: Colors.white,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(3),
+              color: Colors.white,
+            ),
+            width: MediaQuery.of(context).size.width - 20,
             child: Padding(
               padding: const EdgeInsets.all(15.0),
               child: Column(
@@ -69,7 +73,9 @@ class _ThirdState extends State<Third> {
                           ),
                         ),
                       ),
-                      SizedBox(width: 10,),
+                      SizedBox(
+                        width: 10,
+                      ),
                       ElevatedButton(
                         onPressed: () {},
                         child: Text(

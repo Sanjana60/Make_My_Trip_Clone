@@ -9,15 +9,11 @@ class BlurText extends StatelessWidget {
     return Stack(
       children: [
         Positioned(
-          left: 25,
-          right: 25,
-
           child: BlurryContainer(
-            borderRadius: BorderRadius.all(Radius.circular(0)),
+            borderRadius: BorderRadius.all(Radius.circular(3)),
             blur: 4,
-            width: MediaQuery.of(context).size.width - 60,
+            width: MediaQuery.of(context).size.width - 20,
             color: Colors.transparent,
-            padding: EdgeInsets.all(15),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
